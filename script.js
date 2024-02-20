@@ -201,32 +201,72 @@ Breakfastbutn.addEventListener('click', () => {
 
 
 
-const lunchbutn = document.getElementById("")
+const lunchbutn = document.getElementById("Lunch")
 
 
 
 
-Breakfastbutn.addEventListener('click', () => {
+lunchbutn.addEventListener('click', () => {
     docC.innerHTML = "";
 
 
 
-    const sir2 = data.Breakfast;
+    const sir3 = data.lunch;
 
-    for (let i = 0; i < sir2.length; i++) {
+    for (let i = 0; i < sir3.length; i++) {
         docC.innerHTML +=
             `
         <div class = "cards_main">
         <div class = "image">
-        <img  src= "${sir2[i].img}" class="img">
+        <img  src= "${sir3[i].img}" class="img">
     
         </div>
         <div class="info">
         <div class= "T_p">
-        <h3>${sir2[i].title}</h3>
-        <p id="price">${sir2[i].price}</p>
+        <h3>${sir3[i].title}</h3>
+        <p id="price">${sir3[i].price}</p>
         </div>
-        <p id="desc"> ${sir2[i].description}</p>
+        <p id="desc"> ${sir3[i].description}</p>
+
+
+        </div>
+
+        </div>
+    `
+    }
+})
+
+
+
+
+
+
+const shakesbutn = document.getElementById("Dinner")
+
+
+
+
+shakesbutn.addEventListener('click', () => {
+    docC.innerHTML = "";
+
+
+
+    const sir4 = data.shakes;
+
+    for (let i = 0; i < sir4.length; i++) {
+        docC.innerHTML +=
+            `
+        <div class = "cards_main">
+        <div class = "image">
+        <img  src= "${sir4[i].img}" class="img">
+    
+        </div>
+        <div class="info">
+        <div class= "T_p">
+        <h3>${sir4[i].title}</h3>
+        <p id="price">${sir4[i].price}</p>
+        </div>
+        <p id="desc"> ${sir4[i].description}</p>
 
 
         </div>
