@@ -120,16 +120,23 @@ const data = {
 
 
 const docC = document.querySelector(".cards");
-const sir = data.All;
+let sir = data.All;
 
 
-const Allbutn = document.getElementById("All")
-for (let i = 0; i < sir.length; i++) {
 
 
-    Allbutn
-    docC.innerHTML +=
-        `
+
+
+
+const Allbutn = document.getElementById("All");
+
+Allbutn.addEventListener('click', (e) => {
+
+    docC.innerHTML = "";
+
+    for (let i = 0; i < sir.length; i++) {
+        docC.innerHTML +=
+            `
         <div class = "cards_main">
         <div class = "image">
         <img  src= "${sir[i].img}" class="img">
@@ -148,4 +155,83 @@ for (let i = 0; i < sir.length; i++) {
         </div>
     `
 
-}
+
+
+    }
+
+
+})
+
+
+const Breakfastbutn = document.getElementById("Break");
+
+
+
+
+
+Breakfastbutn.addEventListener('click', () => {
+    docC.innerHTML = "";
+
+
+
+    const sir2 = data.Breakfast;
+
+    for (let i = 0; i < sir2.length; i++) {
+        docC.innerHTML +=
+            `
+        <div class = "cards_main">
+        <div class = "image">
+        <img  src= "${sir2[i].img}" class="img">
+    
+        </div>
+        <div class="info">
+        <div class= "T_p">
+        <h3>${sir2[i].title}</h3>
+        <p id="price">${sir2[i].price}</p>
+        </div>
+        <p id="desc"> ${sir2[i].description}</p>
+
+
+        </div>
+
+        </div>
+    `
+    }
+})
+
+
+
+const lunchbutn = document.getElementById("")
+
+
+
+
+Breakfastbutn.addEventListener('click', () => {
+    docC.innerHTML = "";
+
+
+
+    const sir2 = data.Breakfast;
+
+    for (let i = 0; i < sir2.length; i++) {
+        docC.innerHTML +=
+            `
+        <div class = "cards_main">
+        <div class = "image">
+        <img  src= "${sir2[i].img}" class="img">
+    
+        </div>
+        <div class="info">
+        <div class= "T_p">
+        <h3>${sir2[i].title}</h3>
+        <p id="price">${sir2[i].price}</p>
+        </div>
+        <p id="desc"> ${sir2[i].description}</p>
+
+
+        </div>
+
+        </div>
+    `
+    }
+})
