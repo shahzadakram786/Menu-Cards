@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #F8FAFC;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+hr {
+    border-color: orange;
+    background-color: orange;
+    width: 5em;
+    height: 2px;
+    margin-bottom: 2em;
+}
+
+.main {
+    /* background-color: wheat; */
+    /* margin-top: 5em; */
+    width: 70%;
+    height: auto;
+}
+
+.buttons {
+    background-color: orange;
+    border: none;
+    padding: 0.4em 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.butn {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    /* background-color: pink; */
+}
+
+.cards_main {
+    border-radius: 5px;
+    /* background-color: #F8FAFC; */
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 100%
+}
+
+.img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cards {
+    border-radius: 5px;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+}
+
+
+/* below this line css is for text */
+
+.T_p {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0px;
+    font-weight: lighter;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+#price {
+    background-color: orange;
+    padding: 1px 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.info {
+    padding: 10px;
+    line-height: 1.4;
+}
+
+#desc {
+    margin-top: 1em;
+    ;
+    color: #8794A7;
+}
