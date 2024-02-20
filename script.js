@@ -125,14 +125,36 @@ let sir = data.All;
 
 
 
+for (let i = 0; i < sir.length; i++) {
+    docC.innerHTML +=
+        `
+    <div class = "cards_main">
+    <div class = "image">
+    <img  src= "${sir[i].img}" class="img">
 
+    </div>
+    <div class="info">
+    <div class= "T_p">
+    <h3>${sir[i].title}</h3>
+    <p id="price">${sir[i].price}</p>
+    </div>
+    <p id="desc"> ${sir[i].description}</p>
+
+
+    </div>
+
+    </div>
+`
+}
 
 
 const Allbutn = document.getElementById("All");
 
 Allbutn.addEventListener('click', (e) => {
 
+
     docC.innerHTML = "";
+
 
     for (let i = 0; i < sir.length; i++) {
         docC.innerHTML +=
@@ -154,8 +176,6 @@ Allbutn.addEventListener('click', (e) => {
 
         </div>
     `
-
-
 
     }
 

@@ -19,6 +19,7 @@ h1 {
     margin-top: 2em;
     font-size: 3em;
     font-weight: 300;
+    text-wrap: wrap;
 }
 
 hr {
@@ -92,6 +93,7 @@ img {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(3, 1fr);
+    text-wrap: wrap;
     height: auto;
 }
 
@@ -121,6 +123,5 @@ img {
 
 #desc {
     margin-top: 1em;
-    ;
     color: #8794A7;
 }
