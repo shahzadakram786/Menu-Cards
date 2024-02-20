@@ -56,16 +56,16 @@ const data = {
         },
     ],
     Breakfast: [{
-            img: "/images/item-7.jpeg",
-            title: "Oreo Dream",
-            price: "$8.99",
-            description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
+            img: "/images/item-1.jpeg",
+            title: "Buttermilk Pancakes",
+            price: "$15.99",
+            description: "I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed",
         },
         {
-            img: "/images/item-8.jpeg",
-            title: "American Classic",
-            price: "$12.99",
-            description: "on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut",
+            img: "/images/item-4.jpeg",
+            title: "Country Delight",
+            price: "$20.99",
+            description: "Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,",
         },
         {
             img: "/images/item-9.jpeg",
@@ -87,23 +87,23 @@ const data = {
             description: "on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut",
         },
         {
-            img: "/images/item-9.jpeg",
-            title: "Quarantine Buddy",
-            price: "$16.99",
-            description: "skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.",
-        },
-    ],
-    shakes: [{
-            img: "/images/item-7.jpeg",
-            title: "Oreo Dream",
-            price: "$8.99",
-            description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
-        },
-        {
             img: "/images/item-8.jpeg",
             title: "American Classic",
             price: "$12.99",
             description: "on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut",
+        },
+    ],
+    shakes: [{
+            img: "/images/item-3.jpeg",
+            title: "Godzilla Milkshake",
+            price: "$6.99",
+            description: "ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.",
+        },
+        {
+            img: "/images/item-7.jpeg",
+            title: "Oreo Dream",
+            price: "$8.99",
+            description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
         },
         {
             img: "/images/item-9.jpeg",
@@ -121,10 +121,13 @@ const data = {
 
 const docC = document.querySelector(".cards");
 const sir = data.All;
+
+
+const Allbutn = document.getElementById("All")
 for (let i = 0; i < sir.length; i++) {
 
 
-
+    Allbutn
     docC.innerHTML +=
         `
         <div class = "cards_main">
