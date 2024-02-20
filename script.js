@@ -38,7 +38,7 @@ const data = {
         },
         {
             img: "/images/item-7.jpeg",
-            title: "Oreo Dream",
+            title: "Bacon Overflow",
             price: "$8.99",
             description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
         },
@@ -68,23 +68,23 @@ const data = {
             description: "Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut,",
         },
         {
-            img: "/images/item-9.jpeg",
-            title: "Quarantine Buddy",
-            price: "$16.99",
-            description: "skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.",
-        },
-    ],
-    lunch: [{
             img: "/images/item-7.jpeg",
-            title: "Oreo Dream",
+            title: "Bacon Overflow",
             price: "$8.99",
             description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
         },
+    ],
+    lunch: [{
+            img: "/images/item-2.jpeg",
+            title: "Diner Double",
+            price: "$13.99",
+            description: "vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats",
+        },
         {
-            img: "/images/item-8.jpeg",
-            title: "American Classic",
-            price: "$12.99",
-            description: "on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut",
+            img: "/images/item-5.jpeg",
+            title: "Egg Attack",
+            price: "$22.99",
+            description: "franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up",
         },
         {
             img: "/images/item-8.jpeg",
@@ -100,10 +100,10 @@ const data = {
             description: "ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.",
         },
         {
-            img: "/images/item-7.jpeg",
+            img: "/images/item-6.jpeg",
             title: "Oreo Dream",
-            price: "$8.99",
-            description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
+            price: "$18.99",
+            description: "Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday",
         },
         {
             img: "/images/item-9.jpeg",
