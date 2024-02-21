@@ -46,15 +46,18 @@ hr {
 .buttons {
     background-color: orange;
     border: none;
-    padding: 0.4em 1em;
+    padding: 0.4em 0.6em;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     margin: 2em 0 4em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button {
     transition: 0.4s;
+    flex-wrap: wrap;
 }
 
 button:hover {
@@ -113,6 +116,7 @@ img {
     font-weight: 400;
     font-size: 0.88em;
     letter-spacing: 2px;
+    flex-wrap: wrap;
 }
 
 #price {
@@ -159,4 +163,20 @@ img {
     .info {
         font-size: small;
     }
+    .T_p {
+        flex-wrap: wrap;
+    }
 }
+
+
+/* 
+@media screen and (max-width :380px) {
+    .T_p {
+        display: flex;
+        margin: 1em 0px;
+        font-weight: 400;
+        font-size: 0.88em;
+        letter-spacing: 2px;
+        flex-wrap: wrap;
+    }
+} */
