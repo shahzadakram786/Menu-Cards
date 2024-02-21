@@ -19,12 +19,7 @@ const data = {
             price: "$8.99",
             description: "carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird",
         },
-        {
-            img: "/images/item-9.jpeg",
-            title: "Quarantine Buddy",
-            price: "$16.99",
-            description: "skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.",
-        },
+
     ],
     lunch: [{
             img: "/images/item-2.jpeg",
