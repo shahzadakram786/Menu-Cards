@@ -73,7 +73,7 @@ const data = {
 
 const docC = document.querySelector(".cards");
 
-// let sir = data.Breakfast && dat =a.lunch && data.shakes;
+// let sir = data.Breakfast && data.lunch && data.shakes;
 // if (sir) {
 let sir = [];
 if (data.Breakfast && data.lunch && data.shakes) {
