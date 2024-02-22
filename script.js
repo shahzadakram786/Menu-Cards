@@ -70,8 +70,13 @@ const buttons = document.querySelector(".buttons")
 for (let i = 0; i < data.length; i++) {
 
 
-    buttons[i].addEventListener("click", () => {
+    buttons.addEventListener("click", (e) => {
         console.log("hello there felling well today ");
+        console.log(data[0].category);
+        if (e.target === data[0].category) {
+
+
+        }
 
 
 
@@ -84,10 +89,10 @@ for (let i = 0; i < data.length; i++) {
 
 
 
+    function dataStructure() {
 
-
-    docC.innerHTML +=
-        `
+        docC.innerHTML +=
+            `
     <div class = "cards_main">
     <div class = "image">
     <img  src= "${data[i].img}" class="img">
@@ -105,6 +110,42 @@ for (let i = 0; i < data.length; i++) {
 
     </div>
 `
+    }
+    dataStructure();
+
+}
+
+
+
+
+
+
+
+
+// making for functoin  
+
+
+
+function All() {
+    console.log("hi am all  button ");
+}
+
+
+function Breakfast() {
+
+    console.log("hi  i am the button of breakfast");
+}
+
+
+function Lunch() {
+
+    console.log("hi am the lunch button");
+
+}
+
+
+function Shakes() {
+    console.log("hi i am the shakes");
 }
 // const data = {
 
