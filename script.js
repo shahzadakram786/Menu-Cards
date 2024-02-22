@@ -47,7 +47,6 @@ const data = {
             description: "ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.",
         },
         {
-            categg: ' shakes',
             img: "/images/item-6.jpeg",
             title: "Oreo Dream",
             price: "$18.99",
@@ -111,11 +110,11 @@ Allbutn.addEventListener('click', (e) => {
 
     docC.innerHTML = "";
 
+    if (sir) {
 
-
-    for (let i = 0; i < sir.length; i++) {
-        docC.innerHTML +=
-            `
+        for (let i = 0; i < sir.length; i++) {
+            docC.innerHTML +=
+                `
         <div class = "cards_main">
         <div class = "image">
         <img  src= "${sir[i].img}" class="img">
@@ -134,8 +133,9 @@ Allbutn.addEventListener('click', (e) => {
         </div>
     `
 
+        }
+        console.log("inside if statemen  : = > :", docC)
     }
-    console.log("inside if statemen  : = > :", docC)
 
 })
 
@@ -252,47 +252,3 @@ shakesbutn.addEventListener('click', () => {
     `
     }
 })
-
-
-// let shakes = (img, title, price, desc) => {
-
-//     if ()
-//         docC.innerHTML +=
-//         `
-//         <div class = "cards_main">
-//         <div class = "image">
-//         <img  src= "${sir4[i].img}" class="img">
-
-//         </div>
-//         <div class="info">
-//         <div class= "T_p">
-//         <h3>${sir4[i].title}</h3>
-//         <p id="price">${sir4[i].price}</p>
-//         </div>
-//         <p id="desc"> ${sir4[i].description}</p>
-
-
-//         </div>
-
-//         </div>
-//     `
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
