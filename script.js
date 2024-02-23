@@ -70,24 +70,16 @@ const docC = document.querySelector(".cards");
 const buttons = document.getElementsByClassName("buttons");
 console.log(buttons);
 
-for (let i = 0; i < data.length; i++) {
-    buttons[i].addEventListener("click", (e) => {
-        console.log("hello there felling well today ");
-        console.log(data[0].category);
 
-        console.log(e.target.innerHTML);
-        if (e.target.innerHTML === data[i].category) {
-            console.log("inside");
-            docC.innerHTML += data[i].category;
 
-            dataStructure(data[i].category)
 
-        }
 
-    });
+function dataStructure(category) {
+    docC.innerHTML = "";
+    for (let i = 0; i < data.length; i++) {
 
-    function dataStructure() {
-        docC.innerHTML += `
+        if (data[i].category === category) {
+            docC.innerHTML += `
     <div class = "cards_main">
     <div class = "image">
     <img  src= "${data[i].img}" class="img">
@@ -105,10 +97,41 @@ for (let i = 0; i < data.length; i++) {
 
     </div>
 `;
+        }
 
     }
-    dataStructure();
 }
+dataStructure();
+
+
+
+
+
+for (let i = 0; i < buttons.length; i++) {
+
+
+
+    // buttons[i].addEventListener("click", (e) => {
+    //     console.log("hello there felling well today ");
+    //     console.log(data[0].category)
+
+    buttons[i].addEventListener("click", function() {
+        const category = this.innerHTML;
+        dataStructure(category);
+    })
+
+    // });
+
+
+}
+
+
+
+
+
+
+
+
 
 // making for functoin
 
