@@ -80,7 +80,7 @@ function dataStructure(category) {
 
 
 
-        if (data[i].category === category) {
+        if (!category || data[i].category === category) {
 
 
             docC.innerHTML += `
