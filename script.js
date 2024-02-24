@@ -77,25 +77,10 @@ console.log(buttons);
 function dataStructure(category) {
     docC.innerHTML = "";
     for (let i = 0; i < data.length; i++) {
-        docC.innerHTML += `
-<div class = "cards_main">
-<div class = "image">
-<img  src= "${data[i].img}" class="img">
 
-</div>
-<div class="info">
-<div class= "T_p">
-<h3>${data[i].title}</h3>
-<p id="price">${data[i].price}</p>
-</div>
-<p id="desc"> ${data[i].description}</p>
-
-
-</div>`;
 
 
         if (data[i].category === category) {
-            docC.innerHTML = "";
 
 
             docC.innerHTML += `
@@ -125,16 +110,11 @@ dataStructure();
 
 
 
-
 for (let i = 0; i < buttons.length; i++) {
-
-
-
-    // buttons[i].addEventListener("click", (e) => {
-    //     console.log("hello there felling well today ");
     //     console.log(data[0].category)
 
     buttons[i].addEventListener("click", function() {
+        //     console.log("hello there felling well today ");
         const category = this.innerHTML;
         dataStructure(category);
     })
