@@ -95,6 +95,7 @@ function dataStructure(category) {
 
 
         if (data[i].category === category) {
+            docC.innerHTML = "";
 
 
             docC.innerHTML += `
