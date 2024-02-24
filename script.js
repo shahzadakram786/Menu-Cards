@@ -112,11 +112,14 @@ dataStructure();
 
 for (let i = 0; i < buttons.length; i++) {
     //     console.log(data[0].category)
-
     buttons[i].addEventListener("click", function() {
         //     console.log("hello there felling well today ");
         const category = this.innerHTML;
-        dataStructure(category);
+        if (category.toLowerCase() === 'all') {
+            dataStructure(); // Show all cards
+        } else {
+            dataStructure(category); // Show cards for specific category
+        }
     })
 
 
