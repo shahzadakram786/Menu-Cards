@@ -115,11 +115,9 @@ for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
         //     console.log("hello there felling well today ");
         const category = this.innerHTML;
-        if (category.toLowerCase() === 'all') {
-            dataStructure(); // Show all cards
-        } else {
-            dataStructure(category); // Show cards for specific category
-        }
+
+        dataStructure(category === "All" ? null : category); // Show cards for specific category
+
     })
 
 
